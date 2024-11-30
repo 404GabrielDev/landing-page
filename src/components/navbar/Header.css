@@ -8,11 +8,13 @@
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
-    background-color: #333;
+    background-color: #000;
+    color: #fff;
 }
 
 /*Burger Menu*/ 
 .burger-menu {
+    z-index: 1;
     width: 100%;
     height: 100%;
     background-color: #fff;
@@ -81,4 +83,69 @@
 
 .close-icon img {
     cursor: pointer;
+}
+
+.navbar-desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar2 li{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.navbar2 li:hover {
+    color: #f60;
+}
+
+.navbar-desktop ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.container-contact1 {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.container-contact1 img {
+    filter: invert(1);
+}
+
+.container-contact1 button {
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid #0091ff;
+    background-color: #000;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+
+/*DEIXANDO RESPONSIVO*/
+
+
+
+@media (min-width: 1019px) {
+    .navbar-mobile {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1018px) {
+    .navbar-desktop {
+        display: none;
+    }
 }

@@ -4,4 +4,5 @@ import instagram from './instagram-line.png'
 import whatsapp from './whatsapp-line.png'
 import facebook from './facebook-circle-line.png'
 import closeIcon from './close-large-line.webp'
-export{menu, suv, instagram, whatsapp, facebook, closeIcon};
+import suvMobile from './suvertical.webp'
+export{menu, suv, instagram, whatsapp, facebook, closeIcon, suvMobile};

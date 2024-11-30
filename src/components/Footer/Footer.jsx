@@ -69,7 +69,7 @@ const Footer = () => {
         </div>
       </section>
 
-      <section data-aos="zoom-in">
+      <section>
       <div className="container-f5">
           <p>
             © 2024-Best Cars - Seja o piloto da sua própria história -

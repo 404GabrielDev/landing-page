@@ -9,6 +9,34 @@ import {
   Cardcar4,
 } from "../../assets/images";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
+AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 50, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+
+
 const Main = () => {
   return (
     <>
@@ -19,25 +47,25 @@ const Main = () => {
           </div>
 
           <div className="text-overlay">
-            <p>
+            <p data-aos="zoom-in-up">
               SUV: conforto, desempenho e liberdade para todas as suas
               aventuras.
             </p>
 
-            <div className="button-overlay">
+            <div className="button-overlay" data-aos="zoom-in-up">
               <button>Contact</button>
-              <img src={whatsapp} alt="icon" />
+              <img data-aos="zoom-in-up" src={whatsapp} alt="icon" />
             </div>
           </div>
         </div>
 
         <section>
-          <div className="title-cards">
+          <div className="title-cards" data-aos="fade-right">
             <h1>Best SUV in the city!!!</h1>
           </div>
 
           <div className="container-cards">
-            <div className="card1">
+            <div className="card1" data-aos="fade-left">
               <img src={Cardcar1} alt="image" />
               <p>
                 Com espaço amplo e design robusto, os SUVs são perfeitos para
@@ -45,7 +73,7 @@ const Main = () => {
               </p>
             </div>
 
-            <div className="card1">
+            <div className="card1" data-aos="zoom-in">
               <img src={Cardcar2} alt="image" />
               <p>
                 Os SUVs oferecem design moderno, amplo espaço interno e
@@ -53,7 +81,7 @@ const Main = () => {
               </p>
             </div>
 
-            <div className="card1">
+            <div className="card1" data-aos="fade-right">
               <img src={Cardcar3} alt="image" />
               <p>
                 Ideais para viagens ou cidade, os SUVs combinam força, conforto
@@ -62,7 +90,7 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="card4">
+          <div className="card4" data-aos="zoom-in">
             <img src={Cardcar4} alt="image" />
             <p>
               Combinando design sofisticado e potência, os SUVs oferecem

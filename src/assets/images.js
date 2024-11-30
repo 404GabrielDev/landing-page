@@ -5,4 +5,8 @@ import whatsapp from './whatsapp-line.png'
 import facebook from './facebook-circle-line.png'
 import closeIcon from './close-large-line.webp'
 import suvMobile from './suvertical.webp'
-export{menu, suv, instagram, whatsapp, facebook, closeIcon, suvMobile};
+import Cardcar1 from './cards/card1.webp'
+import Cardcar2 from './cards/card2.webp'
+import Cardcar3 from './cards/card3.webp'
+import Cardcar4 from './cards/card4.webp'
+export{menu, suv, instagram, whatsapp, facebook, closeIcon, suvMobile, Cardcar1, Cardcar2, Cardcar3, Cardcar4};

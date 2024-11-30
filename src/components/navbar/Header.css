@@ -1,5 +1,6 @@
 .header {
     width: 100%;
+    font-family: 'Carter One', sans-serif;
 }
 
 .navbar-mobile {
@@ -127,6 +128,7 @@
     background-color: #000;
     color: #fff;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 

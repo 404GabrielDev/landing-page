@@ -1,0 +1,143 @@
+.container-footer {
+    background-color: #000;
+}
+
+/*CONTAINER 1*/
+
+.container-f1 {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.container-f1 h1 {
+    color: #fff;
+}
+
+.container-f1 button {
+    width: 70%;
+    height: 3rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 1rem;
+    border: 2px solid #fff;
+}
+
+.container-f1 button:nth-of-type(3) {
+    background-color: #fff;
+    color: #000;
+}
+
+
+/*CONTAINER 2*/
+.container-f2 {
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+.container-f2 h2 {
+    color: #fff;
+}
+
+.container-f2 ul {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container-f2 li {
+    color: #f60;
+    cursor: pointer;
+    transition: color 0.5s ease;
+}
+
+.container-f2 li:hover {
+    color: #00eaff;
+}
+
+/*CONTAINER 3*/
+
+.container-f3 {
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.container-f3 h2 {
+    color: #fff;
+}
+
+.container-f3 div {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.container-f3 div input {
+    width: 12rem;
+    height: 2rem;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+}
+
+.container-f3 div input::placeholder {
+    color: #fff;
+}
+
+.container-f3 div button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 1rem;
+    border: 2px solid #00ffd5;
+}
+
+/*CONTAINER 4*/
+.container-f4 {
+    margin-top: 2rem;
+    padding: 1rem;
+}
+
+.container-f4 h2 {
+    color: #fff;
+}
+
+.container-f4 div {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.container-f4 div img {
+    filter: invert(1);
+}
+
+
+/*CONTAINER 5*/
+.container-f5 {
+    margin-top: 1rem;
+    padding: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .container-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .container-f1 button {
+        width: 10rem;
+    }
+}
